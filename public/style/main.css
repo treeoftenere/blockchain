@@ -1,0 +1,51 @@
+html, body, #root {
+  width: auto;
+  background-color: black;
+  color: white;
+  height: 100%; }
+
+#home {
+  height: 90%;
+  width: 95%;
+  margin: 0 15px; }
+  #home main {
+    display: flex;
+    height: 100%; }
+    #home main #sensorList {
+      width: 200px;
+      display: flex;
+      flex-direction: column; }
+      #home main #sensorList #sensors {
+        flex: 1;
+        border: solid 1px white; }
+        #home main #sensorList #sensors div {
+          margin: 10px;
+          padding: 15px;
+          border: solid 1px white; }
+          #home main #sensorList #sensors div i {
+            float: right; }
+    #home main #dataHistory {
+      flex-grow: 1;
+      margin: 0 20px;
+      display: flex;
+      flex-direction: column; }
+      #home main #dataHistory #history {
+        flex: 1;
+        border: solid 1px white; }
+        #home main #dataHistory #history div {
+          margin: 10px;
+          padding: 15px;
+          border: solid 1px white; }
+          #home main #dataHistory #history div i {
+            float: right; }
+    #home main #dataDetail {
+      flex-grow: 2;
+      margin: 0 20px;
+      display: flex;
+      flex-direction: column; }
+      #home main #dataDetail #details {
+        flex: 1;
+        border: solid 1px white;
+        white-space: pre;
+        padding: 20px 15px;
+        overflow-y: auto; }
