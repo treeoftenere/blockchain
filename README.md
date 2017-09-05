@@ -12,29 +12,19 @@ sudo apt-get install -y build-essential golang
 ```
 
 
-### Download go-ethereum 
+### Download go-ethereum and build Geth and Swarm
 ```
 git clone https://github.com/ethereum/go-ethereum
 cd go-ethereum
 make geth
+make all
 ```
-
-### Download Swarm 
-
-
-
-### Build Geth and Swarm
-
-Inside each of the directories, run
-
-`make all` 
-
 The binaries will end up in inside 'build/bin' 
 
 Copy geth and swarm to /usr/local/bin 
 
 `sudo cp geth /usr/local/bin`
-`sudo cp swarm /usr/loca/bin`
+`sudo cp swarm /usr/local/bin`
 
 ### Download and install nodejs:
 
