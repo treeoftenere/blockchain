@@ -7,9 +7,17 @@ Download and install golang.  Follow the instructions at:
 
 https://github.com/ethereum/go-ethereum/wiki/Installing-Go#ubuntu-1404 
 
+```
+sudo apt-get install -y build-essential golang
+```
+
+
 ### Download go-ethereum 
-
-
+```
+git clone https://github.com/ethereum/go-ethereum
+cd go-ethereum
+make geth
+```
 
 ### Download Swarm 
 
@@ -36,9 +44,9 @@ Copy geth and swarm to /usr/local/bin
 `npm install -g nodemon` 
 
 
-### Download blockchain-integration - 
+### Clone this Repository - 
 
-`git clone github.com/firescar96/blockchain-integration` 
+`git clone https://github.com/treeoftenere/blockchain.git` 
 
 Inside the directory:
 
