@@ -1,4 +1,4 @@
-# blockchain for Tree of Tenere 
+# Blockchain for Tree of Tenere 
 
 
 To setup and run: 
@@ -49,6 +49,7 @@ Inside the directory:
 
 ```
 npm install 
+npm install -g webpack
 sudo npm install -g truffle
 ```
  
@@ -75,3 +76,5 @@ Finally stop and rerun
 ```
 ./start.sh
 ```
+
+Open a browser and access the node app at: http://localhost:3000/
