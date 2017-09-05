@@ -7,6 +7,8 @@ Download and install golang.  Follow the instructions at:
 
 https://github.com/ethereum/go-ethereum/wiki/Installing-Go#ubuntu-1404 
 
+
+The following have been tested for Ubuntu 
 ```
 sudo apt-get install -y build-essential golang
 ```
@@ -35,7 +37,7 @@ sudo cp swarm /usr/local/bin
 curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
 sudo apt-get install nodejs 
 npm install -g npm 
-npm install -g nodemon
+sudo npm install -g nodemon
 ```
 
 
@@ -47,7 +49,7 @@ Inside the directory:
 
 ```
 npm install 
-npm install -g truffle
+sudo npm install -g truffle
 ```
  
 
@@ -59,13 +61,17 @@ Inside the blockchain-integration folder run
 ./start.sh
 ```
 
-This will start a geth node, start geth mining for ether, 
-start swarm, and start the node app frontend 
+This will start a geth node, start geth mining for ether, start swarm, and start the node app frontend.
 
-Wait for about 15 minutes for geth to mine some ether, then run 
-`truffle deploy --network live` to deploy the smart contracts 
+Wait for about 15 minutes for geth to mine some ether, then run truffle to deploy the smart contracts:
+
+```
+truffle deploy --network live
+```
+
 
 Finally stop and rerun 
+
 ```
-./start.sh`
+./start.sh
 ```
