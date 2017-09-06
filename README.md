@@ -37,7 +37,7 @@ sudo cp swarm /usr/local/bin
 curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
 sudo apt-get install nodejs 
 npm install -g npm 
-sudo npm install -g nodemon
+npm install -g nodemon
 ```
 
 
@@ -50,7 +50,7 @@ Inside the directory:
 ```
 npm install 
 npm install -g webpack
-sudo npm install -g truffle
+npm install -g truffle
 ```
  
 
